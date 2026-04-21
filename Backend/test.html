@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>Test Prediction</h2>
+
+    <button onclick="predict()">Predict</button>
+
+    <script>
+        function predict() {
+            fetch("http://127.0.0.1:5000/predict", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({
+                        email: "sekhar@gmail.com",
+                        symptoms: {
+                            fever: 1,
+                            cough: 1,
+                            headache: 0
+                        }
+                    })
+                })
+                .then(res => res.json())
+                .then(data => alert(JSON.stringify(data)))
+        }
+    </script>
+
+</body>
+
+</html>

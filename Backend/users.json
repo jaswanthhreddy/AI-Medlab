@@ -1,0 +1,100 @@
+{
+  "sekharkolluru06@gmail.com": {
+    "name": "User",
+    "email": "sekharkolluru06@gmail.com",
+    "password": "78471346a3f71c5104e88080896bbf730884802452e20af0ab75d216c2e34bd5",
+    "role": "patient"
+  },
+  "koll22ad302@rmkcet.ac.in": {
+    "name": "User",
+    "email": "koll22ad302@rmkcet.ac.in",
+    "password": "78471346a3f71c5104e88080896bbf730884802452e20af0ab75d216c2e34bd5",
+    "role": "doctor"
+  },
+  "vallad095@tmkcet.ac.in": {
+    "name": "User",
+    "email": "vallad095@tmkcet.ac.in",
+    "password": "0c87c25d2c8f3ca58c45ab9263af7a2cf536605205031f3e217763936f014eb0",
+    "role": "nurse"
+  },
+  "john@test.com": {
+    "name": "John Doe",
+    "email": "john@test.com",
+    "password": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f",
+    "role": "patient",
+    "age": 35,
+    "gender": 0
+  },
+  "john@example.com": {
+    "name": "John Test",
+    "email": "john@example.com",
+    "password": "ecd71870d1963316a97e3ac3408c9835ad8cf0f3c1bc703527c30265534f75ae",
+    "role": "patient",
+    "age": 30,
+    "gender": 0
+  },
+  "vallad095@rmkcet.ac.in": {
+    "name": "Phani",
+    "email": "vallad095@rmkcet.ac.in",
+    "password": "0c87c25d2c8f3ca58c45ab9263af7a2cf536605205031f3e217763936f014eb0",
+    "role": "nurse",
+    "age": 30,
+    "gender": "Male"
+  },
+  "sandnurse04@gmail.com": {
+    "name": "sandhya",
+    "email": "sandnurse04@gmail.com",
+    "password": "78471346a3f71c5104e88080896bbf730884802452e20af0ab75d216c2e34bd5",
+    "role": "nurse",
+    "age": 28,
+    "gender": "Female"
+  },
+  "balajidoctor04@gmail.com": {
+    "name": "balaji",
+    "email": "balajidoctor04@gmail.com",
+    "password": "78471346a3f71c5104e88080896bbf730884802452e20af0ab75d216c2e34bd5",
+    "role": "doctor",
+    "age": 40,
+    "gender": "Male"
+  },
+  "sekharkolluru01@gmail.com": {
+    "name": "seka",
+    "email": "sekharkolluru01@gmail.com",
+    "password": "bce5abb390d59e0c9ea3ef592ca40d775f1669c7955edf0c077f46bd6c84a87e",
+    "role": "doctor",
+    "age": 27,
+    "gender": "Male"
+  },
+  "sekharkolluru02@gmail.com": {
+    "name": "Kolluru",
+    "email": "sekharkolluru02@gmail.com",
+    "password": "294fd652b1b71c144ffda3d65e380989cd93e8aed79a352aea08b26f5c847cf4",
+    "role": "nurse",
+    "age": 30,
+    "gender": "Female"
+  },
+  "sekharkolluru03@gmail.com": {
+    "name": "sandhya",
+    "email": "sekharkolluru03@gmail.com",
+    "password": "956b8ae99ca7162c9abf7aad84f78cf183e41bf4412395eb706f959cd9657062",
+    "role": "patient",
+    "age": 35,
+    "gender": "Female"
+  },
+  "J@j": {
+    "name": "reddy",
+    "email": "J@j",
+    "password": "10279a2423eed4d243adbe96d7dd52f8e891ce01d646c581d0fe915c3e3776d7",
+    "role": "patient",
+    "age": 19,
+    "gender": "Male"
+  },
+  "jaswanth@gmail.com": {
+    "name": "Reddy",
+    "email": "jaswanth@gmail.com",
+    "password": "10279a2423eed4d243adbe96d7dd52f8e891ce01d646c581d0fe915c3e3776d7",
+    "role": "patient",
+    "age": 17,
+    "gender": "Male"
+  }
+}

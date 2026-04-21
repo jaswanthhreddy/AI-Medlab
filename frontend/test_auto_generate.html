@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Auto-Generate Health Tips</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        
+        .form-group {
+            margin: 20px 0;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        
+        textarea {
+            min-height: 300px;
+            font-family: monospace;
+        }
+        
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            margin-top: 10px;
+        }
+        
+        button:hover {
+            opacity: 0.9;
+        }
+        
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        .status {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        .success {
+            background: #d4edda;
+            color: #155724;
+        }
+        
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        
+        .info {
+            background: #d1ecf1;
+            color: #0c5460;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🤖 Test Auto-Generate Health Tips</h1>
+
+        <div class="form-group">
+            <label>Select a Disease:</label>
+            <select id="disease-select">
+                <option value="">-- Select Disease --</option>
+            </select>
+        </div>
+
+        <button id="generate-btn" onclick="testAutoGenerate()">
+            🤖 Generate Health Tips
+        </button>
+
+        <div id="status" class="status" style="display:none;"></div>
+
+        <div class="form-group">
+            <label>Generated Health Tips:</label>
+            <textarea id="health-tips" placeholder="Health tips will appear here..." readonly></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>API Response (Debug):</label>
+            <textarea id="debug-output" placeholder="Raw API response..." readonly style="min-height:150px; font-size:12px;"></textarea>
+        </div>
+    </div>
+
+    <script>
+        const API = "http://127.0.0.1:5000";
+
+        // Load available diseases on page load
+        window.onload = function() {
+            loadDiseases();
+        };
+
+        function loadDiseases() {
+            showStatus('Loading available diseases...', 'info');
+
+            fetch(`${API}/available_diseases`)
+                .then(res => res.json())
+                .then(data => {
+                    const select = document.getElementById('disease-select');
+                    data.diseases.forEach(disease => {
+                        const option = document.createElement('option');
+                        option.value = disease;
+                        option.textContent = disease;
+                        select.appendChild(option);
+                    });
+                    showStatus(`✅ Loaded ${data.total} diseases`, 'success');
+                })
+                .catch(err => {
+                    showStatus(`❌ Error loading diseases: ${err.message}`, 'error');
+                    console.error('Error:', err);
+                });
+        }
+
+        function testAutoGenerate() {
+            const disease = document.getElementById('disease-select').value;
+
+            if (!disease) {
+                alert('⚠️ Please select a disease first');
+                return;
+            }
+
+            const tipsTextarea = document.getElementById('health-tips');
+            const debugOutput = document.getElementById('debug-output');
+            const btn = document.getElementById('generate-btn');
+
+            // Show loading state
+            tipsTextarea.value = '⏳ Loading...';
+            debugOutput.value = 'Fetching...';
+            btn.disabled = true;
+            showStatus(`Fetching recommendations for: ${disease}`, 'info');
+
+            const apiUrl = `${API}/health_recommendations/formatted/${encodeURIComponent(disease)}`;
+            console.log('API URL:', apiUrl);
+
+            fetch(apiUrl)
+                .then(res => {
+                    console.log('Response status:', res.status);
+                    console.log('Response headers:', res.headers);
+                    if (!res.ok) {
+                        throw new Error(`HTTP ${res.status}: ${res.statusText}`);
+                    }
+                    return res.json();
+                })
+                .then(data => {
+                    console.log('Response data:', data);
+                    debugOutput.value = JSON.stringify(data, null, 2);
+
+                    if (data.health_tips) {
+                        tipsTextarea.value = data.health_tips;
+                        showStatus('✅ Health tips generated successfully!', 'success');
+                    } else {
+                        throw new Error('No health_tips in response');
+                    }
+                })
+                .catch(err => {
+                    console.error('Error:', err);
+                    tipsTextarea.value = `❌ Error: ${err.message}`;
+                    debugOutput.value = `Error: ${err.message}\n\nStack: ${err.stack}`;
+                    showStatus(`❌ Error: ${err.message}`, 'error');
+                })
+                .finally(() => {
+                    btn.disabled = false;
+                });
+        }
+
+        function showStatus(message, type) {
+            const statusDiv = document.getElementById('status');
+            statusDiv.textContent = message;
+            statusDiv.className = `status ${type}`;
+            statusDiv.style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>
