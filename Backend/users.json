@@ -96,5 +96,37 @@
     "role": "patient",
     "age": 17,
     "gender": "Male"
+  },
+  "Reddy@gmail.com": {
+    "name": "Reddy",
+    "email": "Reddy@gmail.com",
+    "password": "91b4d142823f7d20c5f08df69122de43f35f057a988d9619f6d3138485c9a203",
+    "role": "patient",
+    "age": 21,
+    "gender": "Male"
+  },
+  "Doctor@gmail.com": {
+    "name": "Sekhar",
+    "email": "Doctor@gmail.com",
+    "password": "91b4d142823f7d20c5f08df69122de43f35f057a988d9619f6d3138485c9a203",
+    "role": "doctor",
+    "age": 21,
+    "gender": "Male"
+  },
+  "Nurse@gmail.com": {
+    "name": "Diwakar",
+    "email": "Nurse@gmail.com",
+    "password": "91b4d142823f7d20c5f08df69122de43f35f057a988d9619f6d3138485c9a203",
+    "role": "nurse",
+    "age": 21,
+    "gender": "Male"
+  },
+  "Diwakar@gmail.com": {
+    "name": "diwakar",
+    "email": "Diwakar@gmail.com",
+    "password": "91b4d142823f7d20c5f08df69122de43f35f057a988d9619f6d3138485c9a203",
+    "role": "patient",
+    "age": 21,
+    "gender": "Male"
   }
 }
