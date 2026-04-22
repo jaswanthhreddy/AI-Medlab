@@ -1,4 +1,4 @@
-const API = "http://127.0.0.1:5000";
+const API = "https://ai-medlab-7bn0.onrender.com/index.html";
 
 console.log("script.js loaded successfully");
 
