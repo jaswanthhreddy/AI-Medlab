@@ -120,8 +120,18 @@ The project is deployed using Docker on Render:
 
 ## 👨‍💻 Author
 
-**Bandi Jaswanth Reddy**
-🎓 B.Tech – Artificial Intelligence & Data Science
+**Bandi Jaswanth Reddy**  
+🎓 B.Tech – Artificial Intelligence & Data Science  
+
+---
+
+## 🚫 License & Usage
+
+This project is protected under **All Rights Reserved**.
+
+❌ You are NOT allowed to copy, modify, distribute, or reuse this project without explicit permission from the author.
+
+📩 For any usage requests, please contact the author.
 
 ---
 
