@@ -1,4 +1,4 @@
-const API = "https://ai-medlab-7bn0.onrender.com/index.html";
+const API = "https://ai-medlab-7bn0.onrender.com";
 
 console.log("script.js loaded successfully");
 
