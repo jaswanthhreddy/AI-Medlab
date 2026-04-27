@@ -1,6 +1,6 @@
-# 🧠 AI MedLab – Intelligent Healthcare Management System
+# AI MedLab – Intelligent Healthcare Management System
 
-🚀 A full-stack AI-powered healthcare platform for disease prediction, patient management, and automated report generation.
+A full-stack AI-powered healthcare platform for disease prediction, patient management, and automated report generation.
 
 🔗 **Live Demo:** https://ai-medlab-7bn0.onrender.com
 
@@ -8,41 +8,41 @@
 
 ---
 
-## 📌 Overview
+##  Overview
 
 AI MedLab is a role-based healthcare system that integrates machine learning with a web application to assist patients, doctors, and nurses. 
 It enables disease prediction, health recommendations, and structured medical report generation.
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
-* 🔐 Role-Based Authentication (Patient / Doctor / Nurse)
-* 🤖 Disease Prediction using Machine Learning
-* 📊 Personalized Health Recommendations
-* 📄 Automated PDF Report Generation
-* 📁 Patient History Tracking
-* 🌐 Fully Deployed Web Application
+*  Role-Based Authentication (Patient / Doctor / Nurse)
+*  Disease Prediction using Machine Learning
+*  Personalized Health Recommendations
+*  Automated PDF Report Generation
+*  Patient History Tracking
+*  Fully Deployed Web Application
 
 ---
 
-## 🖼️ Screenshots
+##  Screenshots
 
-### 🔑 Login Page
+###  Login Page
 
 ![Login](docs/screenshots/login.png)
 
-### 📊 Dashboard
+###  Dashboard
 
 ![Dashboard](docs/screenshots/patient_dashboard.png)
 
-### 🤖 Prediction Result
+###  Prediction Result
 
 ![Prediction](docs/screenshots/doctor_dashboard.png)
 
 ---
 
-## 🏗️ Project Architecture
+##  Project Architecture
 
 ```
 Frontend (HTML, CSS, JS)
@@ -68,7 +68,7 @@ Data Storage
 
 ---
 
-## ⚙️ Run Locally
+##  Run Locally
 
 ```bash
 git clone https://github.com/jaswanthhreddy/AI-Medlab.git
@@ -85,7 +85,7 @@ http://localhost:5000
 
 ---
 
-## 🐳 Docker Deployment
+##  Docker Deployment
 
 ```bash
 docker build -t ai-medlab .
@@ -94,14 +94,14 @@ docker run -p 10000:10000 ai-medlab
 
 ---
 
-## 📂 Documentation
+##  Documentation
 
-📄 **Project Report:** [View Report](docs/ai_medlab_report.pdf)  
-📊 **Presentation:** [View Presentation](docs/ai_medlab_presentation.pdf)  
-📘 **Research Paper:** [View Paper](docs/ai_medlab_research_paper.pdf)
+ **Project Report:** [View Report](docs/ai_medlab_report.pdf)  
+ **Presentation:** [View Presentation](docs/ai_medlab_presentation.pdf)  
+ **Research Paper:** [View Paper](docs/ai_medlab_research_paper.pdf)
 ---
 
-## 🚀 Deployment
+##  Deployment
 
 The project is deployed using Docker on Render:
 
@@ -109,16 +109,16 @@ The project is deployed using Docker on Render:
 
 ---
 
-## 🧪 Future Improvements
+##  Future Improvements
 
-* 🔄 Database integration (MongoDB / SQL)
-* 📱 Mobile application version
-* 🧠 Deep learning-based predictions
-* 🔐 JWT authentication & enhanced security
+*  Database integration (MongoDB / SQL)
+*  Mobile application version
+*  Deep learning-based predictions
+*  JWT authentication & enhanced security
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Bandi Jaswanth Reddy**  
 🎓 B.Tech – Artificial Intelligence & Data Science  
