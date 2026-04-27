@@ -4,7 +4,7 @@ A full-stack AI-powered healthcare platform for disease prediction, patient mana
 
 🔗 **Live Demo:** https://ai-medlab-7bn0.onrender.com
 
-📄 Report | 📊 PPT | 📘 Paper → linked below 👇
+ Report | PPT |  Paper → linked below 👇
 
 ---
 
@@ -125,16 +125,16 @@ The project is deployed using Docker on Render:
 
 ---
 
-## 🚫 License & Usage
+##  License & Usage
 
 This project is protected under **All Rights Reserved**.
 
-❌ You are NOT allowed to copy, modify, distribute, or reuse this project without explicit permission from the author.
+ You are NOT allowed to copy, modify, distribute, or reuse this project without explicit permission from the author.
 
-📩 For any usage requests, please contact the author.
+ For any usage requests, please contact the author.
 
 ---
 
-## ⭐ Support
+##  Support
 
 If you found this project useful, consider giving it a ⭐ on GitHub!
