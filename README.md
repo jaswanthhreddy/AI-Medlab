@@ -125,7 +125,7 @@ The project is deployed using Docker on Render:
   <a href="https://www.linkedin.com/in/jaswanth-reddy-bandi-899525289/" target="_blank">LinkedIn</a> |
   <a href="https://github.com/jaswanthhreddy" target="_blank">GitHub</a>
 </p>
----
+
 
 ##  License & Usage
 
