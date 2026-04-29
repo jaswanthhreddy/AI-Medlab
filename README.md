@@ -126,6 +126,7 @@ The project is deployed using Docker on Render:
   <a href="https://github.com/jaswanthhreddy" target="_blank">GitHub</a>
 </p>
 
+---
 
 ##  License & Usage
 
