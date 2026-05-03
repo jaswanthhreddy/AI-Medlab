@@ -1,6 +1,6 @@
 # AI MedLab – Intelligent Healthcare Management System
 
-A full-stack AI-powered healthcare platform for disease prediction, patient management, and automated report generation.
+A full-stack AI-powered healthcare platform for disease prediction, patient management, and automated report generation..
 
 🔗 **Live Demo:** https://ai-medlab-7bn0.onrender.com
 
